@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+	// function Cat(name,age){
+	// 	this.name = name;
+	// 	this.age = age;
+	// 	this.sayName = function(){
+	// 		alert('我是'+this.name)
+	// 	}
+	// }
+
+
+	function Cat(name,age){
+		this.name = name;
+		this.age = age;
+	}
+
+	Cat.prototype.sayName = function(){
+		alert('我是'+this.name);
+	}
+
+
+	var cat1 = new Cat("喵喵",2);
+	var cat2 = new Cat("旺财",3);
+
+	cat1.sayName();
+	cat2.sayName();
+
+	</script>
+</body>
+</html>

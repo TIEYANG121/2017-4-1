@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button>按钮</button>
+
+	<script>
+		var btn = document.querySelector("button");
+
+		// console.log(btn);
+		// btn.onclick = function(){
+		// 	alert('hello');
+		// }
+
+
+
+		//jquery库:高度可复用的代码
+		function $(selector){
+			this.dom = document.querySelector(selector);
+		}
+
+		$.prototype.click = function(fun){
+			this.dom.onclick = fun;
+		}
+
+
+
+
+		//调用库的程序
+		var btn = new $('button');
+
+
+		btn.click(function(){
+			alert('hehe');
+		})
+
+
+		
+
+
+
+	</script>
+</body>
+</html>

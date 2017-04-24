@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var arr = [1,2,5,2,3,6,5,9];
+
+		function noRepeat(arg){
+			var newArr = arg;
+			newArr.push(100);
+			return newArr;
+		}
+
+		var newarr = noRepeat(arr);
+
+		console.log(arr);
+		console.log(newarr);
+
+
+		// var obj1 = {name:'小明'};
+		// var obj2 = obj1;
+		// obj1.name = "小红";
+		// console.log(obj1) 
+		// console.log(obj2) 
+
+		function fun(obj){
+			obj.name = "小红"
+		}
+		var obj1 = {name:'小明'};
+		fun(obj1);
+		console.log(obj1);
+
+	</script>
+</body>
+</html>
